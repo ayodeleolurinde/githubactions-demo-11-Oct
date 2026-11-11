@@ -1,0 +1,11 @@
+name: my first github actions workflow to run commands
+on: workflow_dispatch
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run a linux command1
+      run: hostname -s
+    - name: Run an echo command
+      run : echo "Hello from Runner"
+    
